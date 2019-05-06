@@ -1,0 +1,16 @@
+list_files(r"F:\VIDEO_BIG_FILES\wyze\2019Apr\record\20190405")
+def list_files(base_folder):
+    L_folder = []
+    L_files = []
+
+    for root, dirs, files in os.walk(base_folder):
+        if files:
+            L_folder.append(root)
+
+    for folder in L_folder:
+        k = os.listdir(folder)
+        for file_name in k:
+            print(folder + "\\" + str(file_name))
+           # L_files.append(folder + "\\" + str(file_name))
+
+    return L_files
