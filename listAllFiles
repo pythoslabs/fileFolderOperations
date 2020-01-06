@@ -1,4 +1,4 @@
-list_files(r"F:\VIDEO_BIG_FILES\wyze\2019Apr\record\20190405")
+list_files(r"F:\VIDEO_BIG_FILES\20190405")
 def list_files(base_folder):
     L_folder = []
     L_files = []
